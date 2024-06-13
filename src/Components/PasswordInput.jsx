@@ -9,7 +9,8 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import "./PasswordInput.css"; // Assuming you add custom animation here
 
 const PasswordInput = () => {
-  const [showPassword, setShowPassword] = useState(false);
+  const [showPassword, setShowPassword] =
+    useState(false);
   const {
     register,
     handleSubmit,
@@ -19,14 +20,25 @@ const PasswordInput = () => {
 
   const onSubmit = (data) => {
     console.log(data);
+    const { confirmPassword, email, username } =
+      data;
+    const newData = {
+      confirmPassword,
+      email,
+      username,
+    };
+    console.log(newData);
     alert("Signup successful!");
   };
 
   const password = watch("password");
 
   return (
-    <div className="flex items-center justify-center min-h-screen " style={{backgroundColor: "initial()"}}>
-      <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
+    <div
+      className="flex items-center justify-center min-h-screen "
+      
+    >
+      <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md" style={{background: "linear-gradient(rgb(87, 108, 188) 0%, rgb(19, 42, 83) 100%)"}}>
         <h2 className="text-2xl font-bold mb-6 text-center">
           Signup
         </h2>
@@ -63,7 +75,6 @@ const PasswordInput = () => {
               Username
             </label>
             <input
-              id="username"
               {...register("username", {
                 required: "Username is required",
               })}
@@ -83,7 +94,6 @@ const PasswordInput = () => {
               Email
             </label>
             <input
-              id="email"
               type="email"
               {...register("email", {
                 required: "Email is required",
@@ -110,8 +120,9 @@ const PasswordInput = () => {
               Password
             </label>
             <input
-              id="password"
-              type={showPassword ? "text" : "password"}
+              type={
+                showPassword ? "text" : "password"
+              }
               {...register("password", {
                 required: "Password is required",
                 minLength: {
@@ -137,7 +148,9 @@ const PasswordInput = () => {
             </label>
             <input
               id="confirmPassword"
-              type={showPassword ? "text" : "password"}
+              type={
+                showPassword ? "text" : "password"
+              }
               {...register("confirmPassword", {
                 required:
                   "Confirm Password is required",
@@ -158,7 +171,7 @@ const PasswordInput = () => {
                 setShowPassword(!showPassword)
               }
             >
-              <label className="label  cursor-pointer">
+              <label className="label justify-stretch cursor-pointer gap-2">
                 <span className="label-text">
                   Show Password
                 </span>
