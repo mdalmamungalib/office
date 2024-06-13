@@ -78,7 +78,7 @@ const PasswordInput = () => {
               {...register("username", {
                 required: "Username is required",
               })}
-              className="mt-1 bg-white block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+              className="mt-1 bg-white block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm text-slate-600"
             />
             {errors.username && (
               <p className="text-red-500 text-left text-xs mt-1">
@@ -104,7 +104,7 @@ const PasswordInput = () => {
                     "Enter a valid email address",
                 },
               })}
-              className="mt-1 bg-white block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+              className="mt-1 bg-white block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm text-slate-600"
             />
             {errors.email && (
               <p className="text-red-500 text-left text-xs mt-1">
@@ -131,7 +131,7 @@ const PasswordInput = () => {
                     "Password must be at least 6 characters long",
                 },
               })}
-              className="mt-1 bg-white block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+              className="mt-1 bg-white block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm text-slate-600"
             />
             {errors.password && (
               <p className="text-red-500 text-left text-xs mt-1">
@@ -158,7 +158,7 @@ const PasswordInput = () => {
                   value === password ||
                   "Passwords do not match",
               })}
-              className="mt-1 bg-white block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+              className="mt-1 bg-white block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm text-slate-600"
             />
             {errors.confirmPassword && (
               <p className="text-red-500 text-left text-xs mt-1">
