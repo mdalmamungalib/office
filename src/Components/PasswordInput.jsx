@@ -9,8 +9,7 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import "./PasswordInput.css"; // Assuming you add custom animation here
 
 const PasswordInput = () => {
-  const [showPassword, setShowPassword] =
-    useState(false);
+  const [showPassword, setShowPassword] = useState(false);
   const {
     register,
     handleSubmit,
@@ -26,7 +25,7 @@ const PasswordInput = () => {
   const password = watch("password");
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
+    <div className="flex items-center justify-center min-h-screen " style={{backgroundColor: "initial()"}}>
       <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
         <h2 className="text-2xl font-bold mb-6 text-center">
           Signup
@@ -112,9 +111,7 @@ const PasswordInput = () => {
             </label>
             <input
               id="password"
-              type={
-                showPassword ? "text" : "password"
-              }
+              type={showPassword ? "text" : "password"}
               {...register("password", {
                 required: "Password is required",
                 minLength: {
@@ -140,9 +137,7 @@ const PasswordInput = () => {
             </label>
             <input
               id="confirmPassword"
-              type={
-                showPassword ? "text" : "password"
-              }
+              type={showPassword ? "text" : "password"}
               {...register("confirmPassword", {
                 required:
                   "Confirm Password is required",
