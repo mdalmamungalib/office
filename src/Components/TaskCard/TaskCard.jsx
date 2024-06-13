@@ -11,6 +11,7 @@ function TaskCard() {
 
   return (
     <div className="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-5">
+        {/* card 01 */}
       <div className="bg-gray-800 text-white p-4 rounded-lg shadow-md">
         <h2 className="text-xl font-bold mb-2">
           Update Passwords
@@ -21,12 +22,12 @@ function TaskCard() {
           password manager to keep track.
         </p>
         <div className="mt-4 ">
-          <span className="text-gray-400">
+          <p className="text-gray-400 text-start">
             13/10/2023
-          </span>
-          <div className="flex justify-between gap-2">
+          </p>
+          <div className="flex justify-between gap-2 mt-2">
             <button
-              className={`px-4 py-2 rounded-md ${
+              className={`px-4 py-2 rounded-full ${
                 isCompleted
                   ? "bg-green-500"
                   : "bg-gray-500"
@@ -44,6 +45,7 @@ function TaskCard() {
           </div>
         </div>
       </div>
+        {/* card 01 */}
       <div className="bg-gray-800 text-white p-4 rounded-lg shadow-md">
         <h2 className="text-xl font-bold mb-2">
           Update Passwords
@@ -53,13 +55,13 @@ function TaskCard() {
           passwords for better security. Use a
           password manager to keep track.
         </p>
-        <div className="mt-4 flex justify-between items-center">
-          <span className="text-gray-400">
+        <div className="mt-4 ">
+          <p className="text-gray-400 text-start">
             13/10/2023
-          </span>
-          <div className="flex gap-2">
+          </p>
+          <div className="flex justify-between gap-2 mt-2">
             <button
-              className={`px-4 py-2 rounded-md ${
+              className={`px-4 py-2 rounded-full ${
                 isCompleted
                   ? "bg-green-500"
                   : "bg-gray-500"
@@ -70,11 +72,14 @@ function TaskCard() {
                 ? "Completed"
                 : "Incompleted"}
             </button>
-            <FaEdit className="cursor-pointer text-gray-400" />
-            <FaTrash className="cursor-pointer text-gray-400" />
+            <div className="flex gap-2 items-center">
+              <FaEdit className="cursor-pointer text-gray-400" />
+              <FaTrash className="cursor-pointer text-gray-400" />
+            </div>
           </div>
         </div>
       </div>
+        {/* card 01 */}
       <div className="bg-gray-800 text-white p-4 rounded-lg shadow-md">
         <h2 className="text-xl font-bold mb-2">
           Update Passwords
@@ -84,13 +89,13 @@ function TaskCard() {
           passwords for better security. Use a
           password manager to keep track.
         </p>
-        <div className="mt-4 flex justify-between items-center">
-          <span className="text-gray-400">
+        <div className="mt-4 ">
+          <p className="text-gray-400 text-start">
             13/10/2023
-          </span>
-          <div className="flex gap-2">
+          </p>
+          <div className="flex justify-between gap-2 mt-2">
             <button
-              className={`px-4 py-2 rounded-md ${
+              className={`px-4 py-2 rounded-full ${
                 isCompleted
                   ? "bg-green-500"
                   : "bg-gray-500"
@@ -99,13 +104,16 @@ function TaskCard() {
             >
               {isCompleted
                 ? "Completed"
-                : "Mark Complete"}
+                : "Incompleted"}
             </button>
-            <FaEdit className="cursor-pointer text-gray-400" />
-            <FaTrash className="cursor-pointer text-gray-400" />
+            <div className="flex gap-2 items-center">
+              <FaEdit className="cursor-pointer text-gray-400" />
+              <FaTrash className="cursor-pointer text-gray-400" />
+            </div>
           </div>
         </div>
       </div>
+        {/* card 01 */}
       <div className="bg-gray-800 text-white p-4 rounded-lg shadow-md">
         <h2 className="text-xl font-bold mb-2">
           Update Passwords
@@ -115,13 +123,13 @@ function TaskCard() {
           passwords for better security. Use a
           password manager to keep track.
         </p>
-        <div className="mt-4 flex justify-between items-center">
-          <span className="text-gray-400">
+        <div className="mt-4 ">
+          <p className="text-gray-400 text-start">
             13/10/2023
-          </span>
-          <div className="flex gap-2">
+          </p>
+          <div className="flex justify-between gap-2 mt-2">
             <button
-              className={`px-4 py-2 rounded-md ${
+              className={`px-4 py-2 rounded-full ${
                 isCompleted
                   ? "bg-green-500"
                   : "bg-gray-500"
@@ -130,13 +138,16 @@ function TaskCard() {
             >
               {isCompleted
                 ? "Completed"
-                : "Mark Complete"}
+                : "Incompleted"}
             </button>
-            <FaEdit className="cursor-pointer text-gray-400" />
-            <FaTrash className="cursor-pointer text-gray-400" />
+            <div className="flex gap-2 items-center">
+              <FaEdit className="cursor-pointer text-gray-400" />
+              <FaTrash className="cursor-pointer text-gray-400" />
+            </div>
           </div>
         </div>
       </div>
+        {/* card 01 */}
       <div className="bg-gray-800 text-white p-4 rounded-lg shadow-md">
         <h2 className="text-xl font-bold mb-2">
           Update Passwords
@@ -146,13 +157,13 @@ function TaskCard() {
           passwords for better security. Use a
           password manager to keep track.
         </p>
-        <div className="mt-4 flex justify-between items-center">
-          <span className="text-gray-400">
+        <div className="mt-4 ">
+          <p className="text-gray-400 text-start">
             13/10/2023
-          </span>
-          <div className="flex gap-2">
+          </p>
+          <div className="flex justify-between gap-2 mt-2">
             <button
-              className={`px-4 py-2 rounded-md ${
+              className={`px-4 py-2 rounded-full ${
                 isCompleted
                   ? "bg-green-500"
                   : "bg-gray-500"
@@ -161,10 +172,80 @@ function TaskCard() {
             >
               {isCompleted
                 ? "Completed"
-                : "Mark Complete"}
+                : "Incompleted"}
             </button>
-            <FaEdit className="cursor-pointer text-gray-400" />
-            <FaTrash className="cursor-pointer text-gray-400" />
+            <div className="flex gap-2 items-center">
+              <FaEdit className="cursor-pointer text-gray-400" />
+              <FaTrash className="cursor-pointer text-gray-400" />
+            </div>
+          </div>
+        </div>
+      </div>
+        {/* card 01 */}
+      <div className="bg-gray-800 text-white p-4 rounded-lg shadow-md">
+        <h2 className="text-xl font-bold mb-2">
+          Update Passwords
+        </h2>
+        <p className="text-gray-400">
+          Review online accounts and update
+          passwords for better security. Use a
+          password manager to keep track.
+        </p>
+        <div className="mt-4 ">
+          <p className="text-gray-400 text-start">
+            13/10/2023
+          </p>
+          <div className="flex justify-between gap-2 mt-2">
+            <button
+              className={`px-4 py-2 rounded-full ${
+                isCompleted
+                  ? "bg-green-500"
+                  : "bg-gray-500"
+              }`}
+              onClick={handleComplete}
+            >
+              {isCompleted
+                ? "Completed"
+                : "Incompleted"}
+            </button>
+            <div className="flex gap-2 items-center">
+              <FaEdit className="cursor-pointer text-gray-400" />
+              <FaTrash className="cursor-pointer text-gray-400" />
+            </div>
+          </div>
+        </div>
+      </div>
+        {/* card 01 */}
+      <div className="bg-gray-800 text-white p-4 rounded-lg shadow-md">
+        <h2 className="text-xl font-bold mb-2">
+          Update Passwords
+        </h2>
+        <p className="text-gray-400">
+          Review online accounts and update
+          passwords for better security. Use a
+          password manager to keep track.
+        </p>
+        <div className="mt-4 ">
+          <p className="text-gray-400 text-start">
+            13/10/2023
+          </p>
+          <div className="flex justify-between gap-2 mt-2">
+            <button
+              className={`px-4 py-2 rounded-full ${
+                isCompleted
+                  ? "bg-green-500"
+                  : "bg-gray-500"
+              }`}
+              onClick={handleComplete}
+            >
+              {isCompleted
+                ? "Completed"
+                : "Incompleted"}
+            </button>
+            <div className="flex gap-2 items-center">
+              <FaEdit className="cursor-pointer text-gray-400" />
+              <FaTrash className="cursor-pointer text-gray-400" />
+            </div>
           </div>
         </div>
       </div>
